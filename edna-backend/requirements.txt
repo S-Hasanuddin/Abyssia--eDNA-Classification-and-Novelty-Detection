@@ -1,0 +1,22 @@
+# ── Core API ─────────────────────────────────────────────────────────────────
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+python-multipart>=0.0.6
+aiofiles>=23.0
+
+# ── ML / Model ───────────────────────────────────────────────────────────────
+torch>=2.0.0
+transformers>=4.30.0
+numpy<2
+scikit-learn>=1.2.0
+hdbscan>=0.8.29
+
+# ── PDF Report ───────────────────────────────────────────────────────────────
+reportlab>=4.0
+
+# ── Bio (for FASTA/FASTQ parsing — optional, we have our own parsers) ───────
+# biopython>=1.81
+
+# ── Dev ──────────────────────────────────────────────────────────────────────
+# httpx  # for testing
+# pytest

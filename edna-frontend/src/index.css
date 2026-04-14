@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 3%;
+    --foreground: 185 30% 90%;
+
+    --card: 210 35% 6%;
+    --card-foreground: 185 30% 90%;
+
+    --popover: 210 35% 6%;
+    --popover-foreground: 185 30% 90%;
+
+    --primary: 175 80% 45%;
+    --primary-foreground: 210 40% 3%;
+
+    --secondary: 210 30% 12%;
+    --secondary-foreground: 185 30% 85%;
+
+    --muted: 210 25% 10%;
+    --muted-foreground: 200 15% 55%;
+
+    --accent: 195 85% 40%;
+    --accent-foreground: 210 40% 3%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 200 20% 15%;
+    --input: 200 20% 15%;
+    --ring: 175 80% 45%;
+
+    --radius: 0.75rem;
+
+    --glow-primary: 175 80% 45%;
+    --glow-accent: 195 85% 40%;
+    --ocean-deep: 210 40% 3%;
+    --ocean-mid: 200 35% 8%;
+    --ocean-surface: 195 30% 15%;
+    --bio-teal: 175 80% 45%;
+    --bio-cyan: 185 90% 50%;
+    --bio-blue: 210 70% 50%;
+
+    --sidebar-background: 210 35% 6%;
+    --sidebar-foreground: 185 30% 90%;
+    --sidebar-primary: 175 80% 45%;
+    --sidebar-primary-foreground: 210 40% 3%;
+    --sidebar-accent: 210 30% 12%;
+    --sidebar-accent-foreground: 185 30% 85%;
+    --sidebar-border: 200 20% 15%;
+    --sidebar-ring: 175 80% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 20px hsl(175 80% 45% / 0.5), 0 0 40px hsl(175 80% 45% / 0.2);
+  }
+  .glow-box {
+    box-shadow: 0 0 20px hsl(175 80% 45% / 0.15), 0 0 60px hsl(175 80% 45% / 0.05);
+  }
+  .glow-border {
+    border-color: hsl(175 80% 45% / 0.3);
+    box-shadow: inset 0 0 20px hsl(175 80% 45% / 0.05), 0 0 15px hsl(175 80% 45% / 0.1);
+  }
+  .gradient-ocean {
+    background: linear-gradient(180deg, hsl(210 40% 3%), hsl(200 35% 8%), hsl(210 40% 3%));
+  }
+  .gradient-card {
+    background: linear-gradient(135deg, hsl(210 35% 6%), hsl(200 35% 8%));
+  }
+  .particle-bg {
+    background-image: radial-gradient(1px 1px at 20% 30%, hsl(175 80% 45% / 0.3), transparent),
+      radial-gradient(1px 1px at 40% 70%, hsl(185 90% 50% / 0.2), transparent),
+      radial-gradient(1px 1px at 60% 40%, hsl(195 85% 40% / 0.2), transparent),
+      radial-gradient(1px 1px at 80% 10%, hsl(175 80% 45% / 0.15), transparent),
+      radial-gradient(1.5px 1.5px at 10% 80%, hsl(185 90% 50% / 0.25), transparent),
+      radial-gradient(1px 1px at 70% 60%, hsl(210 70% 50% / 0.2), transparent),
+      radial-gradient(1.5px 1.5px at 90% 50%, hsl(175 80% 45% / 0.2), transparent);
+  }
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*:Zone.Identifier
+edna-backend/reports/
+edna-backend/data/uploads/
+edna-backend/checkpoints/
+edna-backend/data/uploads/novel_taxa_holdout_clean.json
